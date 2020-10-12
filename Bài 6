@@ -1,0 +1,35 @@
+const Learning = {
+    Step : ['HTMl','CSS','Basics of JavaScript','Node Package Mananger','Git'],
+    Complete : ['False','False','False','False','False']
+}
+while(true){
+    let must = prompt(`Enter your command(New,Delete,Update,Complete)`);
+    if( must == "New"){
+        let Name = prompt(`Enter new task`);
+        Learning.Step.push(Name);
+        console.log(Learning.Step[5]);
+        console.log("False");
+        break;
+    }else if( must == "Update"){
+        let a= Number(prompt(` Mời bạn nhập vị trí muốn thay đổi:`));
+        let b = prompt(` Mời bạn nhập nội dung cần chỉnh sửa`);
+        Learning.Step[a] = b;
+        console.log(Learning.Step[a]);
+        console.log("False");
+        break;
+    }else if (must =="Complete"){
+        let a= Number(prompt(` Mời bạn nhập vị trí muốn thay đổi:`));
+        let done = "True";
+        Learning.Complete[a] = done;
+        console.log(Learning.Step[a]);
+        console.log(Learning.Complete);
+        break;
+    }else if (must == "Delete"){
+        let a= Number(prompt(` Mời bạn nhập vị trí muốn xóa`));
+        Learning.Step.splice(a,1);
+        Learning.Complete.splice(a,1);
+        break;
+    }else{
+        console.log(` Vị trí bạn nhập không có mời bạn nhập lại.`)
+    }
+}
