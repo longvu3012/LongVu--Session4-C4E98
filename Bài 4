@@ -1,0 +1,38 @@
+const dictionary = {
+    debug : 'The process of figuring out why not program has a certain error and how to fix it',
+    done : 'When you task it complete, the only thing you have to do is to wait for users to use it',
+    defect : 'The formal work for ERROR',
+    pm : 'The short version of Project Manager, the person in charge of the final result of a project',
+    ui : 'UI means User Interface, UX mean User Experience, are the process to define how your products looks and feel'
+}
+alert(`Hi, this is dev dictionary`);
+while(true){
+let must = prompt("Enter a ketword");
+var debug, done, defect , pm , ui ;
+({debug, done, defect , pm , ui}= dictionary);
+var {ui : ux} = dictionary;
+    if (must == "debug" )  {
+        console.log(debug);
+        break;
+    }else if ( must == "done"){
+        console.log(done);
+        break;
+    }else if( must == "defect"){
+        console.log(defect);
+        break;
+    }else if (must == "pm"){
+        console.log(pm);
+        break;
+    }else if (must =="ui" || must =="ux"){
+        console.log(ui);
+        break;
+    }else {
+        console.log(`We could not find your work: ${must}`);
+        var b  = prompt(`We could not find your work: ${must}, leave your explanation`);
+        var add = Object.create(dictionary);
+        Object.add = b;
+        alert(`Done`);
+        console.log(Object.add);
+        break;
+    }
+}
