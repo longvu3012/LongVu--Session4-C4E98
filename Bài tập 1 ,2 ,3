@@ -1,0 +1,43 @@
+// ----------------Ex1:--------------------
+// const product = {
+//     name: 'Xiaomi rice cooker',
+//     price : 1700 ,
+//     brand : 'Xiaomi',
+//     color : 'White'
+// }
+// for (let x in  product) {
+//     console.log(`${x} : ${product[x]}`)
+// }
+
+// X nhận được các item  có trong ojbect
+// X là property
+
+// ------------------Ex2: ----------------
+
+// const task = {
+//     subject : 'Implement login feature',
+//     createdBy: 'Hoang Ngoc Duc',
+//     assginTo: 'Nguyen Phuong Nam',
+//     dueDate : ' 2019-10-08T18:00:24+0000',
+//     expectedHours: 0.5,
+// }
+// var {subject , dueDate , assginTo} = task ;
+// let date = [2019 , 10, 08, 18,00, 24];
+// let [y , m, d, hours , minutes , seconds] = date ;
+// console.log(subject);
+// console.log("Day: " + d);
+// console.log("Month: " + m);
+// console.log("Year: " + y);
+// console.log("Time " + hours + minutes + seconds);
+// console.log(assginTo);
+
+// --------------------Ex3: -------------------
+// Lớp ngoài cùng ở đây là Ojbect
+// Lượt truy cập là Array
+// let a = jobSearch['hits'] ;
+// console.log((a[0].benefits))
+// console.log((a[0].jobTitle))
+// console.log((a[0]).locations)
+// console.log((a[0].jobSalary))
+// console.log((a[0].skills))
+// console.log((a[0].jobRequirement)) 
