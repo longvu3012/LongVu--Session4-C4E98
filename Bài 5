@@ -1,0 +1,76 @@
+const products = {
+    Name : ['Xiaomi portable charger 20000mah','VSmart Active 1','Iphone X','Samsung Galaxy A9'],
+    Brand : ['Xiami','Vsmart','Iphone','Samsung'],
+    Price : ['428', '5487','21490','8490'],
+    Color : ['White','Black','Gray','Blue'],
+    Category : ['Charger','Phone','Phone','Phone']
+}
+// console.log("-----------------------------");
+// for (let i=0 ; i<4 ; i++){
+//     console.log(products.Name[i]);
+//     console.log(products.Price[i]);
+//     console.log("-----------------------------");
+// }
+// for(let a = 0; a<4 ; a++ ){
+//     let a = Number(prompt(`Mời bạn nhập vị trí của sản phẩm cần tìm`));
+//     if (0 <= a && a<= 3){
+//         console.log(products.Name[a]);
+//         console.log(products.Brand[a]);
+//         console.log(products.Price[a]);
+//         console.log(products.Color[a]);
+//         console.log(products.Category[a]);
+//         break;
+//     }else
+//         console.log(`${a} không có trong sản phẩm của công ty chúng tôi.Mời bạn nhập lại`);
+// }
+
+// let must = prompt(`Mời bạn nhập loại sản phẩm`);
+// if( must == "charger"){
+//     console.log(products.Name[0]);
+//     console.log(products.Price[0]);
+// }else if( must == "phone"){
+//     let b;
+//     for(b = 1; b<=3 ; b++){
+//     console.log(products.Name[b]);
+//     console.log(products.Price[b]);
+// }
+// }
+var giaTri = ['Phukienzero Dientuc','Tgdd Ddghn VhStore', 'Tgdd','Tgdd'];
+var Providers = Object.create(products);
+Object.Providers = giaTri;
+// let b = products['Providers'].split(' ');
+while(true){
+    let c = prompt(`Mời bạn nhập nhà cung cấp muốn tìm:`);
+    if ( c == "Phukienzero" || c== "Dientuc"){
+        console.log("-------------------------")
+        console.log(products.Name[0]);
+        console.log(products.Brand[0]);
+        console.log(products.Price[0]);
+        console.log(products.Color[0]);
+        console.log(products.Category[0]);
+        console.log(products.Providers[0]);
+        console.log("-------------------------")
+    }else if (c == "Tgdd"){
+        for(let x= 1; x <=3 ; x++){
+            console.log("-------------------------")
+            console.log(products.Name[x]);
+            console.log(products.Brand[x]);
+            console.log(products.Price[x]);
+            console.log(products.Color[x]);
+            console.log(products.Category[x]);
+            console.log(products.Providers[x]);
+            console.log("-------------------------")
+        }
+    }else if (c == "Ddghn" || c == "VhStore"){
+        console.log("-------------------------")
+        console.log(products.Name[1]);
+        console.log(products.Brand[1]);
+        console.log(products.Price[1]);
+        console.log(products.Color[1]);
+        console.log(products.Category[1]);
+        console.log(products.Providers[1]);
+        console.log("-------------------------")
+    }else{
+        console.log(` Nhà cung cấp bạn nhập ko có trong danh sách.`);
+    }
+}
